@@ -14,6 +14,9 @@ version = rootProject.version
 dependencies {
     implementation("com.squareup:kotlinpoet:1.17.0")
     implementation("com.charleskorn.kaml:kaml:0.59.0")
+    implementation(platform("io.ktor:ktor-bom:2.3.10"))
+    implementation("io.ktor:ktor-client-core")
+    implementation("io.ktor:ktor-client-cio")
     implementation(projects.sharedInternal)
 
     testImplementation(projects.githubWorkflowsKt)
